@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+header, footer{
+    background-color: #131d26;
+    color: white;
+    max-width: 1400px;
+}
+
+header img{
+    background-image: "./images/gulp-menu.jpg";
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 46px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header li a{
+    display: block;
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+}
+
+header li a.selected{
+    background-color: #59331d;
+}
+
+.textTitle{
+    text-align: center;
+}
+.textBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-right: 25%;
+    padding-left: 5%;
+    font-size: x-large;
+}
+
+.homeImage{
+    padding-left: 16%;
+    padding-right: 5%;
+    padding-bottom: 4;
+}
+
+
+
+.media img{
+    height: 32px;
+  }
+  
+  @media all and (max-width: 1400px) {
+    header .container{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #131d26;
+    }
+    .textTitle{
+        height: 346px;
+    }
+    .textBody{
+        padding: 40px 20px;
+    }
+}
+
+@media all and (max-width: 744px){
+    header ul{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .textTitle{
+        height: 240px;
+        padding-bottom: 0%;
+    }
+    .textBody{
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 241px;
+        padding: auto;
+    
+}
+
+header .container{
+    background-color: #131d26;
+}
+
+header article{
+    padding-bottom: 0%;
+}
+
+.textImage{
+    margin: 0%;
+    padding: 0%;
+}
+
+footer{
+    height: 22px;
+};
+}
